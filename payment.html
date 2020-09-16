@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Giving</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700"
+        rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="Document 33_1_2.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <header role="banner">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <!-- <img src="Document 33_1_2.jpg" alt='Amos Thomas Ministries' class='img navbar-brand '>
+            <a class="navbar-brand" href="index.html">Amos Thomas Ministries </a> -->
+                <a class="navbar-brand" href="#">
+                    <img src="20200902_115705.png" alt="" loading="lazy" class="img">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Who We Are</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Books And Courses</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="payment.html">Online Giving</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <br><br>
+            <div class="col-md-6 offset-md-3" style="margin-bottom:1%">
+                <span class="anchor" id="formPayment"></span>
+
+                <article class="card">
+
+
+                    <div class="card-body p-5">
+                        <p><img src="flutterwave.png" alt="" class="img-fluid" style="width: 100%;"></p>
+                        <form id="frmGiving" name="frmGiving">
+                            <script src="https://checkout.flutterwave.com/v3.js"></script>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!--
+                                         <label class="form-control-label">Surname</label>-->
+                                        <input id="surname" name="surname" type="text" class="form-control"
+                                            placeholder="Surname">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!--
+                                         <label class="form-control-label">Other Names</label>-->
+                                        <input id="other_name" name="other_name" type="text" class="form-control"
+                                            placeholder="Other Names">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+
+                                        <input id="email" name="email" type="text" class="form-control"
+                                            placeholder="Your Email">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+
+                                        <input id="phone" name="phone" type="text" class="form-control"
+                                            placeholder="Enter Your Phone No.">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Purpose</label>
+
+                                        <select id="purpose" name="purpose" class="form-control" required="">
+                                            <option value="Offering">Offering</option>
+                                            <option value="Tithe">Tithe</option>
+                                            <option value="Thanksgiving">Thanksgiving</option>
+                                            <option value="Special Project">Special Project</option>
+                                            <option value="Prison">Prison</option>
+                                            <option value="TV Broadcast">TV Broadcast</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+
+                                        <label class="form-control-label">Currency</label>
+                                        <select id="currency" name="currency" class="form-control" required="">
+                                            <option value="NGN">NGN</option>
+                                            <option value="USD">USD</option>
+                                            <option value="GBP">GBP</option>
+                                            <option value="EUR">EUR</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <br>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+
+                                        <div class="input-group">
+                                            <input class="form-control" id="amount" name="amount" type="number" min="10"
+                                                placeholder="Amount">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text text-muted">
+                                                    <i class="fa fa-cc-visa"></i> &nbsp; <i class="fa fa-cc-amex"></i>
+                                                    &nbsp;
+                                                    <i class="fa fa-cc-mastercard"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button class="subscribe btn btn-primary btn-block"
+                                            style="background-color: #ffce3a; border-color:#ffce3a;"
+                                            onclick="makePayment()" type="button">
+                                            PAY
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelement-and-player.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
