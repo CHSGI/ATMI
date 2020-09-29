@@ -9,6 +9,7 @@ function makePayment() {
 
 
   const amount = document.getElementById('amount').value
+  const public_key = "FLWPUBK-bdfb5a3e3be1c8cb2444486501931259-X"
 
   const currency = document.getElementById('currency').value
 
@@ -26,16 +27,17 @@ function makePayment() {
     tx_ref,
     amount,
     currency,
-    offering,
+
     payment_options: "card,mobilemoney,ussd",
     customer: {
       email,
       phone_number,
-      name
+      name,
+      offering
 
     },
     callback: function (data) { // specified callback function
-
+      data.offering
     },
     customizations: {
       title: "Amos Thomas Giving",
